@@ -10,7 +10,7 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: action-gtest
-      run: apt-get install gtest
+      run: sudo apt-get install gtest
     - name: cmake test
       run: cmake test
     - name: make test
