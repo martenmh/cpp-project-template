@@ -9,8 +9,18 @@ jobs:
     
     steps:
     - uses: actions/checkout@v1
-    - name: action-gtest
-      run: sudo apt-get install libgtest-dev 
+    - name: install cmake & libgtest-dev
+      run: sudo apt-get install cmake libgtest-dev 
+    - name: go to gtest dir
+      run: cd /usr/src/gtest
+    - name: cmake gtest
+      run: sudo cmake CMakeLists.txt
+    - name: make gtest
+      run: sudo make
+    - name: copy lib
+      run: sudo cp *.a /usr/lib
+    - name: go to project dir
+      run: cd /home/runner/work/testing-boilerplate/testing-boilerplate/
     - name: cmake test
       run: cmake test
     - name: make test
