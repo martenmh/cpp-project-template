@@ -11,15 +11,17 @@ jobs:
     - uses: actions/checkout@v1
     - name: install cmake & libgtest-dev
       run: sudo apt-get install cmake libgtest-dev 
-    - name: cmake gtest
+    - name: build gtest
       working-directory: /usr/src/gtest/
       run: |
         sudo cmake .
         sudo make
         sudo cp *.a /usr/lib
-    - name: cmake test
+    - name: build tests
       working-directory: /home/runner/work/testing-boilerplate/testing-boilerplate/test
       run: |
         cmake .
         make
-        ./runTest
+    - name: run tests
+      working-directory: /home/runner/work/testing-boilerplate/testing-boilerplate/test
+      run: ./runTest
