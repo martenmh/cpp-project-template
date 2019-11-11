@@ -17,6 +17,11 @@ jobs:
         sudo cmake .
         sudo make
         sudo cp *.a /usr/lib
+    - name: build project
+      working-directory: /home/runner/work/testing-boilerplate/testing-boilerplate/
+      run: |
+        sudo cmake .
+        sudo make
     - name: build tests
       working-directory: /home/runner/work/testing-boilerplate/testing-boilerplate/test
       run: |
