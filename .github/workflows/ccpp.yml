@@ -14,12 +14,12 @@ jobs:
     - name: cmake gtest
       working-directory: /usr/src/gtest/
       run: |
-      sudo cmake .
-      sudo make
-      sudo cp *.a /usr/lib
+        sudo cmake .
+        sudo make
+        sudo cp *.a /usr/lib
     - name: cmake test
       working-directory: /home/runner/work/testing-boilerplate/testing-boilerplate/
       run: |
-      cmake test
-      make -C test
-      ./test/runTest
+        cmake test
+        make -C test
+        ./test/runTest
