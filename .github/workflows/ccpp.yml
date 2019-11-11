@@ -19,10 +19,7 @@ jobs:
         sudo cp *.a /usr/lib
     - name: cmake test
       working-directory: /home/runner/work/testing-boilerplate/testing-boilerplate/test
-      run: cmake .
-    - name: make test
-      working-directory: /home/runner/work/testing-boilerplate/testing-boilerplate/test
-      run: make
-    - name: run test
-      working-directory: /home/runner/work/testing-boilerplate/testing-boilerplate/test
-      run: ./test/runTest
+      run: |
+        cmake .
+        make
+        ./runTest
