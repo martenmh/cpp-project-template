@@ -18,10 +18,10 @@ jobs:
         sudo make
         sudo cp *.a /usr/lib
     - name: build project
-      working-directory: /home/runner/work/testing-boilerplate/testing-boilerplate/
+      working-directory: /home/runner/work/cpp-project-template/cpp-project-template/
       run: |
         sudo cmake .
         sudo make
     - name: run tests
-      working-directory: /home/runner/work/testing-boilerplate/testing-boilerplate/bin
+      working-directory: /home/runner/work/cpp-project-template/cpp-project-template/bin
       run: ./runTests
