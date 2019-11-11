@@ -10,7 +10,7 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: action-gtest
-      uses: CyberZHG/github-action-gtest@0.0.1
+      run: apt-get install gtest
     - name: cmake test
       run: cmake test
     - name: make test
