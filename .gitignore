@@ -12,10 +12,13 @@ _deps
 *.cbp
 
 # Ignore the build and lib dirs
+!build/.keep
 build/*
+!lib/.keep
 lib/*
 
 # Ignore any executables
+!bin/.keep
 bin/*
 
 # Ignore Mac specific files
