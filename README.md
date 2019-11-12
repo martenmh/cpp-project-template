@@ -1,3 +1,5 @@
+![](https://github.com/martenmh/workflows/c/c++%ci/badge.svg)
+
 # C++ Project Template
 
 Change the project name to your git repo name with the script
