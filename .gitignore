@@ -12,14 +12,14 @@ _deps
 *.cbp
 
 # Ignore the build and lib dirs
-!build/.keep
 build/*
-!lib/.keep
+!build/.keep
 lib/*
+!lib/.keep
 
 # Ignore any executables
-!bin/.keep
 bin/*
+!bin/.keep
 
 # Ignore Mac specific files
 .DS_Store
