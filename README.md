@@ -1,4 +1,5 @@
-![](https://github.com/martenmh/workflows/%3A"C%2FC%2B%2B+CI/badge.svg)
+![](https://github.com/martenmh/cpp-project-template/workflows/CMakeCPP/badge.svg)
+![](https://img.shields.io/badge/Made%20with-C%2B%2B-%23639AD2)
 
 # C++ Project Template
 
