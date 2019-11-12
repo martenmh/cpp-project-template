@@ -1,4 +1,4 @@
-![](https://github.com/martenmh/workflows/c/c++%ci/badge.svg)
+![](https://github.com/martenmh/workflows/%3A"C%2FC%2B%2B+CI/badge.svg)
 
 # C++ Project Template
 
