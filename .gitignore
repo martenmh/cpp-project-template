@@ -1,8 +1,8 @@
+# Ignore unnecessary CMake files
 CMakeLists.txt.user
 CMakeCache.txt
 CMakeFiles
 CMakeScripts
-Testing
 Makefile
 cmake_install.cmake
 install_manifest.txt
@@ -10,8 +10,13 @@ compile_commands.json
 CTestTestfile.cmake
 _deps
 *.cbp
+
+# Ignore the build and lib dirs
+build/*
+lib/*
+
+# Ignore any executables
 bin/*
-test/CMakeFiles
-test/cmake_install.cmake
-test/CMakeCache.txt
-test/Makefile
+
+# Ignore Mac specific files
+.DS_Store

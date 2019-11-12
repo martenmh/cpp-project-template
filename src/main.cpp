@@ -1,8 +1,7 @@
-#include "factorial.h"
 #include <iostream>
+#include "factorial.h"
 
 int main(){
-
-    std::cout << Factorial(5) << std::endl;
+    std::cout << factorial(5) << std::endl;
     return 0;
 }

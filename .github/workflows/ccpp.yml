@@ -22,11 +22,6 @@ jobs:
       run: |
         sudo cmake .
         sudo make
-    - name: build tests
-      working-directory: /home/runner/work/testing-boilerplate/testing-boilerplate/test
-      run: |
-        cmake .
-        make
     - name: run tests
-      working-directory: /home/runner/work/testing-boilerplate/testing-boilerplate/test
+      working-directory: /home/runner/work/testing-boilerplate/testing-boilerplate/bin
       run: ./runTests

@@ -1,6 +1,7 @@
 #include "../src/factorial.cpp"
 #include <gtest/gtest.h>
 
-TEST(SquareRootTest, PositiveNos) {
-    ASSERT_EQ(720, Factorial(6));
+TEST(FactorialTest, Positive) {
+    ASSERT_EQ(2, factorial(2));
+    ASSERT_EQ(720, factorial(6));
 }
