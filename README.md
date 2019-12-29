@@ -3,6 +3,7 @@
 
 # C++ Project Template
 
+C++ Project template using CMake, GTest & github actions.
 
 ## Change project name
 
@@ -17,11 +18,14 @@ chmod +x changeProjectName
 This will change all occurrences of the project name
 
 ## Prerequisites
+* GTest
+* CMake
 
 Ubuntu:
 ```
 sudo apt-get install cmake libgtest-dev 
 
+cd /usr/src/gtest
 sudo cmake .
 sudo make
 sudo cp *.a /usr/lib
@@ -32,19 +36,18 @@ Arch linux:
 sudo pacman -S cmake gtest
 ```
 
-## Building
+## Building your project
 ```
 cd new-project-name
 cmake .
 make
 ```
 
-## Running
+## Running your project
 Run application:
 ```
 ./bin/new-project-name
 ```
-
 
 Run tests:
 ```

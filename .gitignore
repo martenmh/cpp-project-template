@@ -23,3 +23,6 @@ bin/*
 
 # Ignore Mac specific files
 .DS_Store
+
+# Ignore IntelliJ’s project specific settings files
+.idea/*
