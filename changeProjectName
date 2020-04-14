@@ -2,13 +2,13 @@
 a="cpp-project-template"
 
 if [[ "$1" != "" ]]; then
-    sed -i.bak "s/$a/$1/g" ./.github/workflows/ccpp.yml
-    sed -i.bak "s/$a/$1/g" CMakeLists.txt
-    sed -i.bak "s/$a/$1/g" README.md
-    sed -i.bak "s/C++ Project Template/$1/g" README.md
+    sed -i "s/$a/$1/g" ./.github/workflows/ccpp.yml
+    sed -i "s/$a/$1/g" CMakeLists.txt
+    sed -i "s/$a/$1/g" README.md
+    sed -i "s/C++ Project Template/$1/g" README.md
     # Change project name in this file so you can change it multiple times
-    sed -i.bak "s/$a/$1/g" changeProjectName
-    sed -i.bak '/C++ Project template/, $d' README.md
+    sed -i "s/$a/$1/g" changeProjectName
+    sed -i '/C++ Project template/, $d' README.md
 else
     echo "usage: $0 project-name."
 fi
