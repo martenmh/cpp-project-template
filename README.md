@@ -7,7 +7,7 @@ C++ Project template using CMake, GTest & github actions.
 
 ## Change project name
 
-Change the project name to your git repo name with the script
+    Change the project name to your git repo name with the script
 `changeProjectName`
 
 ```
@@ -18,15 +18,15 @@ chmod +x changeProjectName
 This will change all occurrences of the project name
 
 ## Prerequisites
-* GTest
+    * GTest
 * CMake
 
-Ubuntu:
+    Ubuntu:
 ```
-sudo apt-get install cmake libgtest-dev 
+sudo apt-get install cmake libgtest-dev
 
-cd /usr/src/gtest
-sudo cmake .
+    cd /usr/src/gtest
+    sudo cmake .
 sudo make
 sudo cp *.a /usr/lib
 ```
@@ -39,12 +39,12 @@ sudo pacman -S cmake gtest
 ## Building your project
 ```
 cd new-project-name
-cmake .
+    cmake .
 make
 ```
 
 ## Running your project
-Run application:
+    Run application:
 ```
 ./bin/new-project-name
 ```
