@@ -17,6 +17,5 @@ include_directories(${GTEST_INCLUDE_DIRS})
 add_executable(runTests test/tests.cpp src/factorial.cpp)
 target_link_libraries(runTests ${GTEST_LIBRARIES} gtest_main)
 
-
 add_executable(runBench test/bench.cpp src/factorial.cpp)
 target_link_libraries(runBench benchmark::benchmark)
